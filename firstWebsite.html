@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<title>Andrew's Website</title>
+
+<style>
+
+body
+{
+	background-color: rgb(196, 230, 255);
+}
+
+#title
+{
+	text-align: center
+}
+
+.arithmetic
+{
+	font-family: Consolas;
+    background-color: Black;
+    color: lime;
+    width: 200px;
+    height: 100px;
+    font-size: 30px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: green;
+}
+
+#test2
+{
+	color: blue;
+}
+
+.arithmetic:hover
+{
+	color:aqua;
+}
+
+.reset
+{
+	font-family:Consolas;
+    background-color: Black;
+    color: red;
+    width: 80px;
+    height:40px;
+    font-size: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: red;
+}
+
+.reset:hover
+{
+	color: white;
+}
+
+.random
+{
+	font-family:Consolas;
+    background-color: yellow;
+    color: black;
+    width: 100px;
+    height:40px;
+    font-size: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: orange;
+}
+</style>
+
+<body>
+<h1 id="title">Andrew's Website - Calculator</h1>
+<h2 id="test">Your current number is:</h2>
+<h2 id="test2">0</h2>
+<button class = "arithmetic" onclick = "changeTextAdd();">Add 1</button>
+<button class = "arithmetic" onclick = "changeTextSubtract();">Subtract 1</button>
+<br><br>
+<button class = "arithmetic" onclick = "changeTextMultiply();">Multiply 2</button> 
+<button class = "arithmetic" onclick = "square();">Square</button> <br> <br> 
+<button class = "reset" onclick = "reset();">Reset</button>
+
+
+</body>
+
+<script>
+let i = 0;
+
+function changeTextAdd()
+{
+    document.getElementById("test2").innerHTML = ++i;
+}
+
+function changeTextSubtract()
+{
+    document.getElementById("test2").innerHTML = --i;
+}
+
+function changeTextMultiply()
+{
+    document.getElementById("test2").innerHTML = i *= 2;
+}
+
+function square()
+{
+	document.getElementById("test2").innerHTML = i *= i;
+}
+
+function reset()
+{
+	i = 0;
+    document.getElementById("test2").innerHTML = i;
+}
+	
+
+</script>
+
+</html>
