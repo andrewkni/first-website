@@ -1,5 +1,5 @@
-# Flyguin.github.io
+# andrewkni.github.io
 
-https://flyguin.github.io/firstWebsite
+https://andrewkni.github.io/first-website/
 
 Website made 10/23/2021 (Davis Coding Club)
